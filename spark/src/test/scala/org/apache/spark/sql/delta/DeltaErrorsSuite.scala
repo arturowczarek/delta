@@ -2134,9 +2134,9 @@ trait DeltaErrorsSuiteBase
     }
     {
       val e = intercept[DeltaAnalysisException] {
-        throw DeltaErrors.specifySchemaAtReadTimeException
+        throw DeltaErrors.readSourceSchemaConflictException
       }
-      checkError(e, "DELTA_UNSUPPORTED_SCHEMA_DURING_READ", "0AKDC", Map.empty[String, String])
+      checkError(e, "DELTA_READ_SOURCE_SCHEMA_CONFLICT", "42K07", Map.empty[String, String])
     }
     {
       val e = intercept[DeltaAnalysisException] {

@@ -1161,9 +1161,9 @@ trait DeltaErrorsBase
     )
   }
 
-  def specifySchemaAtReadTimeException: Throwable = {
+  def readSourceSchemaConflictException: Throwable = {
     new DeltaAnalysisException(
-      errorClass = "DELTA_UNSUPPORTED_SCHEMA_DURING_READ",
+      errorClass = "DELTA_READ_SOURCE_SCHEMA_CONFLICT",
       messageParameters = Array.empty
     )
   }

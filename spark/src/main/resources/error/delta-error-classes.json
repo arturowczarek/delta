@@ -2938,11 +2938,11 @@
     ],
     "sqlState" : "0AKDC"
   },
-  "DELTA_UNSUPPORTED_SCHEMA_DURING_READ" : {
+  "DELTA_READ_SOURCE_SCHEMA_CONFLICT" : {
     "message" : [
-      "Delta does not support specifying the schema at read time."
+      "The schema provided for the source read doesn't match the schema of the Delta table"
     ],
-    "sqlState" : "0AKDC"
+    "sqlState" : "42K07"
   },
   "DELTA_UNSUPPORTED_SOURCE" : {
     "message" : [
